@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------------
+    Dans cette feuille de styles CSS, je vais pouvoir définir l'apparence
+    que je veux donner aux différents éléments qui composent ma page !
+
+    ### La Synthaxe ###
+    element {
+         propriete:valeur;
+    }    
+
+---------------------------------------------------------------------------*/
+/*-- google font= bibliothèque de police-----*/
+
+/*Ajout de Google Font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
+
+/*-- Je cible dans ma page HTML, tous les éléments A, tous les éléments H1 et tous les éléments H3 --*/
+
+a, h1 , h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*-----------------------------------------------------------------------
+ Cibler via la "classe" de l'élément 
+NB : Une même classe peut être présent plusieurs fois sur une même page.
+
+.LaClasse {
+    propriete:valeur;
+}
+-----------------------------------------------------------------------*/
+
+/*
+    Consigne :
+         
+        1- Tous les liens de la classe "header" en noir
+        2- Non souligné
+        3- Affiché en ligne via la propiété "display"
+
+*/
+ 
+/*---
+Ici, je cible tous les liens présent dans la div class "header"
+                                                          -*/
+
+                                                          
+.header a{
+    /*--Plusieurs facons de définir une couleur--*/
+
+    /*-- Mot clé de la couleur--*/
+    color: black;
+
+    /*-- Notation Hexadecimale--*/
+    color: #000000;
+    color: #000;
+
+    /*-- Notation Décimale --*/
+    color: rgb(000, 000, 000);
+
+/*-- Gérer le soulignement de mon texte--*/
+text-decoration: none;
+
+/*-- Modifier la taille de la police--*/
+font-size: 20px;
+
+/*--Mes liens s'affiche en Majuscule--*/
+text-transform: uppercase;
+
+}
+
+/*--
+   Ici, je cible toutes les listes présentes dans la div class "header"
+                                                                  --*/
+
+.header ul {
+    margin: 0;
+    padding: 0;
+}              
+
+.header ul li {
+    display: inline-block;
+    /*-- WIDTH : me permet de définir la largeur de l'élément --*/
+    width: 317px;
+    /*- Aligner mon texte dans son élément -*/
+    text-align: center;
+}
+    
+
+
+
+
