@@ -85,8 +85,210 @@ text-transform: uppercase;
     /*- Aligner mon texte dans son élément -*/
     text-align: center;
 }
+
+/*-- Je souhaite que mes liens soient en rouge au passage de la souris --*/
+
+a:hover {
+    color:rgb(23, 181, 230);
+}
+
+/*--Je change la couleur de mon lien à l'interieur de la classe "current"--*/
+
+.current a {
+    color: f;
+}
+
+/*-----------------------------------------------------------------------
+ Cibler via son "ID" de l'élément 
+NB : Un ID peut être présent qu'une fois sur une même page.
+
+#MonID {
+    propriete:valeur;
+}
+-----------------------------------------------------------------------*/
+
+#page {
+    /* -- Je vais définir la largeur de ma page --*/
+    width: 960px;
+    /*--margin : <top/bottom> <left/right> --*/
+    margin: 80px auto;
+    /* -- Je rajoute à ma page un fond blanc -- */
+    background: #FFF;
+   
+   /*--------
+Consigne :
+          1- A ma div#page, ajouter un marge top/bottom de 80px
+          2- Ajouter avec la propriété border-radius un arrondi de 5px a div#page
+          3 - Puis , grâce a box-shadow, ajouter une légère autour de div#page */
+   
+
+
+
+          /*-- border-radius permet de rajouter un arrondi à mon élément--*/
+    border-radius: 5px;
+
+    /*-- J'applique une ombre autour de ma #page --*/
+    /*-- offset-x | offset-y | blur-radius | color --*/
+    box-shadow:  10px 10px 10px rgb(175, 168, 168);
+
+    /*-- J'applique une marge interne de 5px autour de #page --*/
+    padding: 15px;
+
+    /* -- Overflow avec la valeur hidden, va supprimer l'affichage de tout les éléments qui dépassent de la #divpage --*/
+    overflow: hidden;
+}
+
+body {
+    background-color: rgba(167, 148, 148, 0.699);
+}
+
+       
+.contenu h1 {
+    /*-- Aligner mon titre au milieu --*/
+    text-align: center;
+    
+    /*-- Titre en gras --*/
+    font-weight: normal;
+
+    /*--solid : Ligne par défaut, dotted : petit points, dashed : des traits d'union --*/
+    border-bottom: 1px dashed #000;
+}
+
+.bandeauduhaut {
+    width:100% ;
+    height:130px ;
+    background:url(../IMG/bandeaunuage.jpg) no-repeat;
+    background-size:cover ;
+    background-position-y: -91px;
+    
+    
+}
     
 
+/*-- CSS pour illustration et article --*/
+
+.contenu {
+    /*- Dimension & Positionnement--*/
+    width: 100%;
+    height: auto;
+    float: left;
+    /*-- Décoration--*/ 
+}
+
+.illustration {
+    /*-- Dimension & positionnement--*/
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+   
+    /*--Décoration--*/
+}
+
+.illustration img {
+    /*-- Dimension & Positionnement--*/
+   max-width: 100%;
+   border-radius: 5px;
+   box-shadow: 5px 5px 10px rgb(175, 168, 168);
+     
+}
+
+.article {
+    /*-- Dimension & Positionnement --*/
+    width: 460px;
+    height:auto;
+    float: left;
+    /*-- décoration--*/
+    margin: 0 10px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+/*-- VIdé le cache du navigateur avec Ctrl+Maj+R --*/
+
+.footer {
+    width: 100%;
+    height:auto;
+    float: left;
+    background-color: rgb(153, 157, 158);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
 
 
+/*--Google map--*/
+
+
+.gmap {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+    
+}
+.gmap iframe {
+    border-radius: 5px;
+
+}
+    /*--newsletter*/
+
+.newsletter {
+    width: calc( (100% / 3) - 10px );
+    float: left;
+    margin-left: 10px; 
+    
+}
+
+.newsletter fieldset {
+    font-family: 'Roboto Slab', sans-serif;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    color: #FFF;
+    height: 180px;
+}
+
+.newsletter legend{
+
+}
+
+.newsletter input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+.newsletter input[type=submit]{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background: rgb(138, 132, 132);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact fieldset{
+    font-family: 'Roboto Slab', sans-serif;
+    border: 2px solid #ffffff;
+    color: #FFF;
+    border-radius: 8px;
+    height: 215px;
+}
+
+
+.contact {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+
+.footer a{
+        text-decoration: none;
+        color: black;
+
+
+}
 
