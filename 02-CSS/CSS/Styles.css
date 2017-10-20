@@ -139,7 +139,7 @@ Consigne :
 }
 
 body {
-    background-color: rgba(167, 148, 148, 0.699);
+    background-color: #e2e2e2;
 }
 
        
@@ -172,6 +172,7 @@ body {
     width: 100%;
     height: auto;
     float: left;
+    padding-bottom: 10px
     /*-- Décoration--*/ 
 }
 
@@ -208,7 +209,7 @@ body {
 
 .footer {
     width: 100%;
-    height:auto;
+    height:195px;
     float: left;
     background-color: rgb(153, 157, 158);
     padding-top: 10px;
@@ -247,9 +248,7 @@ body {
     height: 180px;
 }
 
-.newsletter legend{
 
-}
 
 .newsletter input {
     width: 100%;
@@ -273,8 +272,10 @@ body {
     border: 2px solid #ffffff;
     color: #FFF;
     border-radius: 8px;
-    height: 215px;
+    height: 179px;
+    margin-top: -18px;
 }
+
 
 
 .contact {
@@ -292,3 +293,7 @@ body {
 
 }
 
+.span {
+    color:rgb(23, 181, 230);
+    
+}
