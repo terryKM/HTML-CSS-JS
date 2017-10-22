@@ -95,7 +95,7 @@ a:hover {
 /*--Je change la couleur de mon lien à l'interieur de la classe "current"--*/
 
 .current a {
-    color: f;
+    color: black;
 }
 
 /*-----------------------------------------------------------------------
