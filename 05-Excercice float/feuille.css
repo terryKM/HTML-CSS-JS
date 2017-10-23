@@ -1,0 +1,58 @@
+.page{
+    width: 1000px;
+    max-width: 1000px;
+}
+
+body{
+    width: 1000px;
+   
+}
+   
+
+.rectangle{
+    width: 500px;
+    height: 750px;
+    background-color: black;
+    float: left;
+}
+.carre1{
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    float: left;
+} 
+.carre2{
+    width: 250px;
+    height: 250px;
+    background-color: violet;
+    float: left;
+}
+.carre3{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    float: left;
+}
+.carre4{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    float: left;
+}
+.carre5{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    float: left;
+}
+.carre6{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    float:left;
+}
+
+
+
+
+

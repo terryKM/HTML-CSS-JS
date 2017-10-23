@@ -8,77 +8,151 @@
 #page {
     width: 100%;
     max-width: 1000px;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgb(175, 168, 168);
+    font-family: 'Roboto Slab','serif';
+    background-color: rgb(156, 150, 150);
+    margin: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    
+}
+
+.topheader{
+    padding-left: 700px;
+    float:left;
+    }
+
+.topheader nav a {
+    text-decoration: none;
+    color: black;
+    
+}    
+
+nav a:hover  {
+    color: #005D74
+}
+
+.logo a img {
+    float: left;
+    width: 10%;
+   height: 90px;
+}   
+
+.bandeau a img{
+    width: 90%;
+    float: left;
+    height: 90px;
+   
+}
+
+.menu ul li{
+    width: 250px;
+    text-align: center;
+    display: inline-block;
     font-family: 'Roboto Slab','serif';
 }
 
-.section {
-    overflow:hidden
+.menu ul li a {
+    text-decoration: none;
+    font-family: 'Roboto Slab','serif';
+    color: black;
 }
 
-.aside {
-    float:left
+.menu ul li a:hover {
+    color: #005D74
+
 }
 
-.footer {
+.menu{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projecteur img {
     width: 100%;
-    height: 195px;
+    height: 295px;
+   
+}
+
+.presentation aside a img {
+    width: 20%;
     float: left;
-    background-color: rgb(153, 157, 158);
+    
+
+}
+
+.article h1,p{
+    width: 80%;
+    float: left;
+}
+
+.article{
+    margin: 10px;
+    border-left: 5px;
+}
+
+.footer{
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    /* -- Un hauteur de 210px -- */
+    height: 210px;
+    /* -- Positionnement -- */
+    float: left;
+    /* -- Décoration -- */
+    background-color: #4e4e4e;
     padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .gmap {
     width: calc( (100% / 3) - 10px);
     float: left;
     margin-left: 10px;
+    
 }
+.gmap iframe {
+    border-radius: 5px;
 
-    .gmap iframe {
-        border-radius: 5px;
-    }
-/*--newsletter*/
+}
+    /*--newsletter*/
 
 .newsletter {
     width: calc( (100% / 3) - 10px );
     float: left;
-    margin-left: 10px;
+    margin-left: 10px; 
+    
 }
 
-    .newsletter fieldset {
-        font-family: 'Roboto Slab', sans-serif;
-        border-radius: 8px;
-        border: 2px solid #ffffff;
-        color: #FFF;
-        height: 180px;
-    }
+.newsletter fieldset {
+    font-family: 'Roboto Slab', sans-serif;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    color: #FFF;
+    height: 180px;
+}
 
 
 
-    .newsletter input {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 5px;
-        padding: 5px 10px;
-    }
+.newsletter input {
+    width: 92%;
+    height: 26px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
 
-        .newsletter input[type=submit] {
-            width: 100%;
-            height: 30px;
-            border: 0;
-            background: rgb(138, 132, 132);
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+.newsletter input[type=submit]{
+    width: 102%;
+    height: 30px;
+    border: 0;
+    background: rgb(138, 132, 132);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-.contact fieldset {
+.contact fieldset{
     font-family: 'Roboto Slab', sans-serif;
     border: 2px solid #ffffff;
-    color: black;
+    color: #FFF;
     border-radius: 8px;
     height: 179px;
     margin-top: -18px;
@@ -91,13 +165,14 @@
     float: left;
     margin-left: 10px;
     text-decoration: none;
+    margin-top: 18px
+    
 }
 
-.aside a img {
-    float:left;
-}
-
-#partenaire {
-    float:left;
-    max-width:100px
+.partenaires img{
+    width: 250px;
+    height: 250px;
+    border: 5px;
+    float: left;
+    margin: 40px;
 }
