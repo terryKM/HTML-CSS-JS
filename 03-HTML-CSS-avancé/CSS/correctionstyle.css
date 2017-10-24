@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    background: #005D74;
+    font-family: 'Roboto Slab',sans-serif;
+}
+
+
+
+.page{
+    /*--Dimension & Positionnement--*/
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    /*--Décoration--*/
+    margin: 18px auto;
+
+    /*-- Est équivalent à :
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right:auto;
+    margin: 40px auto 40px auto;--*/
+}
+
+/*-- le chevron permet de cibler les enfant de la div page --*/
+.page > p {
+    color: #130A29;
+}
+
+.topheader {
+    /*dimensio & posiotionnement--*/
+    width: 100%;
+    height: 30px;
+    float: left;
+
+    /*--Décoration-*/
+   background-image: linear-gradient(180deg,#FFF,#EEE);
+   border-top-left-radius: 10px;
+}
+
+.topheader p {
+    /*--Décoration--*/
+    text-align: right;
+    margin: 0;
+    line-height: 28px;
+    margin:0 10px 0 0; 
+
+}
+
+.topheader a{
+    color: #005D74;
+    text-decoration: none;
+}
+
+.topheader p a:hover {
+    text-decoration: underline;
+}
+
+
+/*--HEADER --*/
+
+header  {
+    width: 100%;
+    height: 130px;
+    float: left;
+    background:#FFF;
+}
+
+/*-- quand je travaille avec des images je travaille soit avec la hauteur ,soit la largeur afin de garde les proportions de celle-ci,
+si je n'ai pas le choix je peux utilisé la propriété object-fit en sachant qu'elle n'est pas prise en charge pas internet explorer--*/
+.logo{
+    width: calc (25%-10px);
+    height: auto;
+    float: left;
+    margin: 10px 0 0 10px;
+
+}
+
+.logo a img{
+    width: 110px;
+}
+
+
+/*-- Menu du header --*/
+
+nav{
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding-left: 130px;
+}
+na ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+
+}
+nav ul li :last-child {
+    margin-right:0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 21px;
+    line-height: 120px;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: #005D74;
+    
+    
+}
+
+/*---LE PROJECTEUR---*/
+#projecteur{
+    width: 100%;
+    height: 355px;
+    float: left;
+    overflow: hidden;
+}
+    
+#projecteur img{
+    width: 100%;
+    object-position: 0px -207px;
+
+}
+
+/*----- ZONE DE CONTENU -------*/
+section{
+    /*-- DIMENSIONS ET POSITIONNEMENT --*/
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: #FFF;
+    margin-top: 0px;
+}
+section aside {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+section aside img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section article{
+    /*--DIMENSIONS ET POSITIONNEMENT*/
+    width: 50%;
+    height: auto;
+    /*-- la bordure et le padding sont inclus dans les 50 %--*/
+    float: left;
+    padding: 1% 5% 0 5%;
+    box-sizing: border-box;
+}
+section article h3{
+    text-align: center;
+    font-weight: normal;
+}
+section article p{
+    font-family: 'Roboto Slab',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+
+}
+
+
+/*--PARTENAIRES--*/
+
+.partenaires{
+    width: 100%;
+    height: auto;
+    float: left;
+    /*--Décorations--*/
+    background-image: linear-gradient(180deg,#EEE 0%,#fff 40%);
+    margin-top: -4px;
+    padding-bottom: 20px;
+   
+}
+.partenaires h2{
+    text-align: center;
+    font-weight: normal;
+
+}
+.partenaires ul{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+.partenaires ul li img:hover{
+    -webkit-filter: grayscale(0%);
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;  
+}
+
+
+
+.partenaires ul li{
+    width: calc(95%/4);
+    display: inline-block;
+    text-align: center;
+}
+.partenaires ul li img{
+    max-width: 100%;
+    /*width: 50%;*/
+    height: 125px;
+    -webkit-filter: grayscale(100%);
+    
+} 
+
+/*-- PIED DE PAGE --*/
+
+footer{
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    /* -- Un hauteur de 210px -- */
+    height: 210px;
+    /* -- Positionnement -- */
+    float: left;
+    /* -- Décoration -- */
+    background: #9e9e9e;
+   padding-bottom: 40px;
+}
+
+.gmap {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+    
+}
+.gmap iframe {
+    border-radius: 5px;
+
+}
+    /*--newsletter*/
+
+.newsletter {
+    width: calc( (100% / 3) - 10px );
+    float: left;
+    margin-left: 10px; 
+    
+}
+
+.newsletter fieldset {
+    font-family: 'Roboto Slab', sans-serif;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    color: rgb(0, 0, 0);
+    height: 180px;
+}
+
+
+
+.newsletter input {
+    width: 92%;
+    height: 26px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}
+
+.newsletter input[type=submit]{
+    width: 100%;
+    height: 33px;
+    border: 0;
+    background: rgb(138, 132, 132);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact fieldset{
+    font-family: 'Roboto Slab', sans-serif;
+    border: 2px solid #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 179px;
+    margin-top: -18px;
+}
+
+
+
+.contact {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+    text-decoration: none;
+    margin-top: 18px
+    
+}
+
+.contact  a{
+    text-decoration: none;
+    color: #005d74;
+}
+.contact a:hover{
+    text-decoration: underline;
+}
+

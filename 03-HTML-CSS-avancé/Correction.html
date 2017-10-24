@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <!-- 1/feuille de reset =remettre a zero toute les balises css-->
+          <!--2/normalize.css=harmoniser dans tout les naviguateurs-->
+          <title>Accueil | La guadeloupe</title>
+          <!--déclaration des Feuilles de styles -->
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/correctionstyle.css">
+          <!--Font awesome |icons-->
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          <meta charset="UTF-8">
+
+      </head>
+      <body>
+          <!--Le contenu de ma page-->
+          <div class="page">
+              <p><strong>L'îles aux belles eaux</strong> </p>
+              
+              <!--Top header-->
+              <div class="topheader">
+                   <p>Espace Clients :
+                       <a href="#">Connexion</a> |
+                       <a href="#">Inscription</a>
+                   </p>
+              </div>
+
+              <!--Header-->
+              <header>
+                  <div class="logo">
+                       <a href="Correction.html">
+                           <img src="./img/logo-guadeloupe2.png"
+                                alt="Logo guadeloupe">
+                       </a>
+                  </div>
+                 
+                  <!--nav>ul>li*3>a[href#]-->
+                 <nav>
+                     <ul>
+                         <li><a href="Correction.html">Accueil</a></li>
+                         <li><a href="#">Découvrir</a></li>
+                         <li><a href="#">Infos Pratique</a></li>
+                     </ul>
+                 </nav>
+              </header>
+
+          </div><!-- /.page-->
+
+          <!-- PROJECTEUR-->
+          <div id="projecteur">
+              <img src="./img/guadeloupe.jpg" alt="bandeau">
+          </div>
+
+          <!--ZONE DE CONTENU-->
+          <div class="page">
+              <section>
+                  <aside>
+                       <img src="img/vue-haut-gpe.jpg" alt="guadeloupe du haut">
+                  </aside>
+                  <article>
+                        <h3>La Guadeloupe</h3>
+                        <p> La Guadeloupe (Gwadloup en créole et, par abus de langage confondant les deux parties de l'île, 
+                        Karukera en amérindien) est à la fois une région monodépartementale de l'Outre-mer français et une région ultrapériphérique européenne, 
+                        située dans les Caraïbes ; son code départemental officiel est le « 971 ».Ce territoire des Antilles et département d'outre-mer français, 
+                        bordé par la mer des Caraïbes et l'océan Atlantique, est situé à environ 6 200 km de la France métropolitaine, à 600 km au nord des côtes du Venezuela en Amérique du Sud, 
+                        à 700 km à l'est de la République dominicaine et à 2 200 km au sud-est des États-Unis. Il se compose d'îles et îlets,
+                         dont deux majeures habitées : la Grande-Terre et la Basse-Terre formant la Guadeloupe proprement dite. 
+                        Plusieurs terres voisines, Marie-Galante, l'archipel des Saintes (Terre-de-Haut et Terre-de-Bas),
+                         La Désirade et les îles de la Petite-Terre sont rattachées administrativement à ce territoire.
+                        </p>
+                  </article>
+
+                  <div class="partenaires">
+                       <h2>Nos Partenaires</h2>
+                       <ul>
+                          
+                        <li> <img src="img/logo-aircaraibes.png" alt="logo air caraïbe"></li>
+
+                         <li> <img src="img/logo-creditagricole.png" alt="Logo crédit agricole"></li>
+                         <li> <img src="img/logo-region-guadeloupe.jpg" alt="logo region guadeloupe"></li>
+                          <li> <img src="img/Vente-Logo-Entreprise-006.png" alt="logo entreprises"></li>
+                           
+                       </ul>
+
+                  </div>
+              </section>
+          </div> <!-- /.page-->
+          
+          <footer>
+          
+           <div class="page">
+
+                <div class="gmap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d108459.06426286593!2d-61.68262658435647!3d15.469539756933823!2m2!1f0!2f34.05426794888053!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x8c0e755a77287d51%3A0xecbe3e37b74a07ab!2sGuadeloupe!5e1!3m2!1sfr!2sfr!4v1508670052826" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div> 
+
+                    <div  class="newsletter">
+                        <form name="newsletter"
+                              action="inscriptionNewsletter.php"
+                              method="post">
+
+                             <fieldset>
+                                     <legend>Newsletter</legend>
+                                     <input type="text" name="Nom" placeholder="Nom" />
+                                     <input type="text" name="Prénom" placeholder="Prénom"/>
+                                     <input type="email" name="email" placeholder="Email" required />
+                                     <input type="submit" value="M'inscrire !"/>
+                             </fieldset>
+
+                         </form>
+                     </div>   
+
+
+                 <div class="contact">
+                     <!--CONTACT-->
+                     <address>
+                         <fieldset>
+                             <legend>Contact</legend>
+                             <strong>Office du tourisme</strong><br>
+                             <a href="tel:+59059056045"><i class="fa fa-phone" aria-hidden="true"></i>0590 56 60 45</a><br>
+                             <a href="mailto:officegp.gouv.fr"><i class="fa fa-envelope" aria-hidden="true"></i>officegp@gouv.fr</a>
+                             <p>Place Victor SCHOELCHER <br>Baie-Mahault<br> 97122 </p>
+
+                         </fieldset>
+                     </address>
+            
+                 </div>  <!--FIN PAGE-->       
+          </footer>
+      </body>
+</html>
+  
