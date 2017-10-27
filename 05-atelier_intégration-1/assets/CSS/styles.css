@@ -45,6 +45,8 @@ header{
     
     margin-left:auto ;
     margin-right:auto;
+    z-index: 2;
+    position: relative;
 }
 
 /*-- TRADUCTION --*/
@@ -106,6 +108,7 @@ header > nav{
     height: auto;
     float: right;
     margin-right: 174px;
+   
 }
 
 
@@ -154,49 +157,220 @@ header > nav ul li:nth-child(3) a{
 
 .projecteur {
     width: 100%;
-    max-width: 1300px;
+   height: 750px;
     float: left;
+    position: relative;
 }
 
 .projecteur img {
     margin-bottom: -4px;
+ 
 }
 
 .bandeau {
     width: 100%;
     background-color: #fe3224;
     height: 50px;
+    float: left;
+    text-align: center;
+    position: relative;
 }
 
 .bandeau img{
-    display: block;
-    margin: 0 auto;
+ margin-top: -16px;
+ position:absolute;
+ transform: translateX(-50%);
 }
 
-.bandeau2{
+.composersejour{
     background: -webkit-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
     background: -moz-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
     background: -o-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
     background: -ms-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
     background: radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+   
     width: 100%;
     height: 121px ;
-    margin-top: -16px;
+    float: left;
+    
+    
+    border-bottom-right-radius: 10px;
+
+}
+
+
+.composersejour p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
     text-align: center;
 
 }
 
-
-.bandeau2 img{
-
-}
-
-.bandeau2 span.color {
+.composersejour span.color {
     color:  #fe372a;
 }
 
-.bandeau2 span.underline {
+.composersejour span.underline {
     text-decoration: underline;
 }
+
+
+/*-- Bouton BTN-SEJOUR--*/
+
+.btn-sejour{
+    width: 346px;
+    height: 37px;
+    display: block;
+
+    background: -webkit-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -moz-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -o-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -ms-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: linear-gradient(180deg, #fe8e86 0%, #fe3224 100%);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 37px;
+    
+    
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-sejour a {
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+.btn-sejour .cursor-hand {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.1s ease-in-out;
+}
+
+.btn-sejour:hover .cursor-hand{
+    visibility: visible;
+    opacity: 1;
+    bottom: -8px;
+    transform: rotate(-15deg);
+}
+
+.btn-sejour a::before {
+    width: 147px;
+    height:36px;
+    background: url(../IMG/fleche.png);
+    content: " ";
+    position: absolute;
+    top:0px;
+    left: -170px;
+}
+
+.btn-sejour a::after {
+    width: 147px;
+    height:36px;
+    transform: rotate(180deg);
+    background: url(../IMG/fleche.png);
+    content: " ";
+    position: absolute;
+    top:0px;
+   right:-170px;
+}
+
+.menu {
+    width: 339px;
+    height: 613px;
+    float: left;
+    position: absolute;
+    background:  #c43e3e;
+    left: 396px;
+    top: 131px;
+    z-index: 1;
+}
+
+.menu img {
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    width: 339px;
+    margin-left: 5px;
+    float: left;
+
+}
+
+.menu nav {
+
+}
+
+.menu nav ul {
+
+}
+
+.menu nav ul li {
+    height: 69.3px;
+    width: 339px;
+    display: inline-block;
+    float: left;
+    margin-left: -35px;
+    text-align: center;
+
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+
+}
+
+.menu nav ul li a  {
+    text-decoration: none;
+   
+}
+
+.menu nav ul li a  span.red {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color: #fe3626;
+}
+
+.menu nav ul li a  span.brown {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color: #bc8242;
+}
+
+.menu nav ul li a  span.blue {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color:  #3860a7;
+}
+
+.menu nav ul li a  span.green {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color:  #08a640;
+}
+
+.menu nav ul li a em {
+    font-family:'Roboto condensed', Times, serif;
+    font-size: 14px;
+    color: #000000;
+   
+
+
+
+
 
 
