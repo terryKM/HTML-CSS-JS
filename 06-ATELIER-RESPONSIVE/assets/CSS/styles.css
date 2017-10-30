@@ -1,0 +1,42 @@
+
+
+
+
+.body{
+   
+}
+
+.container-full {
+
+    width: 100%;
+    max-width: 1300px;
+    background-color: rgb(105, 102, 102);
+    margin: 0 auto;
+}
+
+nav ul{ 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+    
+
+
+nav ul .col-lg-4 {
+    color:  #202020;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 48px;
+    width: 100%;
+    margin: 0 10px;
+
+
+
+}
+
+.projecteur {
+    width: 100%;
+    max-width: 1300px;
+
+} 
