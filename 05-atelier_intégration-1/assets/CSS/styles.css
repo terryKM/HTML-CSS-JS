@@ -1,0 +1,377 @@
+body {
+    background: url(../img/fond.jpg)no-repeat;
+    background-size: cover;
+}
+
+main{
+    /*--Ma page fera 1300px de large --*/
+    max-width: 1300px;
+    width: 100% ;
+    /*--Sa hauteur s'adaptera en fonction du contenu--*/
+    height: auto;
+    /*-- Elle sera centrée au milieu de la page -- */
+    margin: 0 auto;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+main > p{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
+main > p span {
+    text-decoration: underline;
+}
+
+/*-- HEADER--*/
+
+header{
+    /* -- Dimensions & Posionnement -- */
+    width: 100%;
+    height: 50px;
+    float: left;
+
+    /*-- Décoration --*/
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+    
+    margin-left:auto ;
+    margin-right:auto;
+    z-index: 2;
+    position: relative;
+}
+
+/*-- TRADUCTION --*/
+
+header > div {
+    width: 25%;
+    height: 19px;
+    float: left;
+    margin: 10px 0 0 30px;
+
+}
+
+header > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:black;
+    text-transform: uppercase;
+    float: left; 
+    margin: 4px 5px 0px 0px;
+}
+
+/*-- Drapeau FR --*/
+header > div > a:nth-child(2){
+    display: block;
+    width: 28px ;
+    height: 19px;
+    float: left;
+    background: url(../IMG/drapeaux.jpg) no-repeat;
+    text-indent: -90000px;
+    background-position: -71px 4px ;
+    transition: 0.1s ease-in-out;
+    margin-left: 4px;
+
+}
+
+header > div > a:nth-child(2):hover,
+header > div > a:last-child:hover {
+    background-position-y: 0px;
+}
+
+/*-- Drapeau EN --*/
+header > div > a:last-child{
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    background: url(../IMG/drapeaux.jpg)no-repeat;
+    text-indent: -90000px;
+    background-position: -107px 4px;
+    margin-left: 5px;
+    transition: 0.1s ease-in-out;
+
+}
+
+/*-- NAVIGATION--*/
+
+header > nav{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 174px;
+   
+}
+
+
+
+header > nav ul{
+    margin: 0;
+    padding: 0;
+    
+   
+
+}
+
+header > nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+   
+}
+
+header > nav ul li a{
+    font-family: 'Roboto condensed',sans-serif;
+    color:  #202020;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 48px;
+    width: 100%;
+    margin: 0 10px;
+
+}
+
+header > nav ul li a:hover{
+    text-decoration: underline;
+
+}
+
+header > nav ul li.current a{
+    color:  #3060a7;
+    text-decoration: underline;
+
+} 
+
+header > nav ul li:nth-child(3) a{
+    color: #fe3224;
+}
+
+/*---PROJECTEUR --*/
+
+.projecteur {
+    width: 100%;
+   height: 750px;
+    float: left;
+    position: relative;
+}
+
+.projecteur img {
+    margin-bottom: -4px;
+ 
+}
+
+.bandeau {
+    width: 100%;
+    background-color: #fe3224;
+    height: 50px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.bandeau img{
+ margin-top: -16px;
+ position:absolute;
+ transform: translateX(-50%);
+}
+
+.composersejour{
+    background: -webkit-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -moz-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -o-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: -ms-radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+    background: radial-gradient(circle farthest-side at 50%, #ffffff 0%, #febeb9 100%);
+   
+    width: 100%;
+    height: 121px ;
+    float: left;
+    
+    
+    border-bottom-right-radius: 10px;
+
+}
+
+
+.composersejour p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+
+}
+
+.composersejour span.color {
+    color:  #fe372a;
+}
+
+.composersejour span.underline {
+    text-decoration: underline;
+}
+
+
+/*-- Bouton BTN-SEJOUR--*/
+
+.btn-sejour{
+    width: 346px;
+    height: 37px;
+    display: block;
+
+    background: -webkit-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -moz-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -o-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: -ms-linear-gradient(-90deg, #fe8e86 0%, #fe3224 100%);
+    background: linear-gradient(180deg, #fe8e86 0%, #fe3224 100%);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 37px;
+    
+    
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn-sejour a {
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+.btn-sejour .cursor-hand {
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.1s ease-in-out;
+}
+
+.btn-sejour:hover .cursor-hand{
+    visibility: visible;
+    opacity: 1;
+    bottom: -8px;
+    transform: rotate(-15deg);
+}
+
+.btn-sejour a::before {
+    width: 147px;
+    height:36px;
+    background: url(../IMG/fleche.png);
+    content: " ";
+    position: absolute;
+    top:0px;
+    left: -170px;
+}
+
+.btn-sejour a::after {
+    width: 147px;
+    height:36px;
+    transform: rotate(180deg);
+    background: url(../IMG/fleche.png);
+    content: " ";
+    position: absolute;
+    top:0px;
+   right:-170px;
+}
+
+.menu {
+    width: 339px;
+    height: 613px;
+    float: left;
+    position: absolute;
+    background:  #c43e3e;
+    left: 396px;
+    top: 131px;
+    z-index: 1;
+}
+
+.menu img {
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    width: 339px;
+    margin-left: 5px;
+    float: left;
+
+}
+
+.menu nav {
+
+}
+
+.menu nav ul {
+
+}
+
+.menu nav ul li {
+    height: 69.3px;
+    width: 339px;
+    display: inline-block;
+    float: left;
+    margin-left: -35px;
+    text-align: center;
+
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+
+}
+
+.menu nav ul li a  {
+    text-decoration: none;
+   
+}
+
+.menu nav ul li a  span.red {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color: #fe3626;
+}
+
+.menu nav ul li a  span.brown {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color: #bc8242;
+}
+
+.menu nav ul li a  span.blue {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color:  #3860a7;
+}
+
+.menu nav ul li a  span.green {
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 18px;
+    color:  #08a640;
+}
+
+.menu nav ul li a em {
+    font-family:'Roboto condensed', Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
+   
+
+
+
+
+
+

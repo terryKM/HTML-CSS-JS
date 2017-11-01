@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Encodage pour les caractères spéciaux -->
+    <meta charset="UTF-8">
+    
+    <!-- Titre de la Page -->
+    <title>Page de Base</title>
+
+    <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Affichage sans zoom pour les mobiles  -->
+    <meta name="viewport" content="width=device-width, init-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+     <!-- Styles CSS  -->
+     <link rel="stylesheet" href="./CSS/styles.css">
+
+     <!-- HTML5 Shiv -->
+     <!--[if lt IE 9]>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+     
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <nav class="col-xs-12">
+                    
+                     
+                           <ul class="list-inline">
+                                <li class="current"><a href="index3.html">Accueil</a></li>
+                                <li><a href="#"> Réserver</a></li>
+                                <li><a href="#">Infos Pratiques</a></li>
+                           </ul>
+                   
+               </nav>
+
+              <div class="col-xs-12">
+                <h1>Les îles des Saintes</h1>
+              </div>
+            <div class="row">
+
+               <div class="col-xs-12">
+                  <aside class="col-md-6">
+                   <img class="img-responsive" src="./IMG/baie des saintes.jpg" alt="baie des saintes">
+                  </aside>
+
+                    <article class="col-md-6">
+                       <p>La baie des Saintes est une baie du littoral nord-ouest de l'île de Terre-de-Haut, dans l'archipel des Saintes, dépendance de la Guadeloupe. 
+                        Elle fait partie du club<span> des plus belles baies du monde</span></p>
+                        <h3>Géographie</h3>
+                        <p>D'une superficie de 5,2 km22, la baie des Saintes est délimitée, au nord-est, par la pointe Coquelet et, au sud-ouest, par le Pain de sucre.
+                        Elle est protégée par l'îlet à Cabrit au nord-ouest.
+                        Elle comprend plusieurs anses : Anse Devant, Anse Galet, Anse du Fond Curé, Petite Anse, Anse du Bourg, Anse Mire.
+                        Le port de Terre-de-Haut est établi au fond de la baie.</p>
+                    
+                    </article>
+               
+               </div>
+            </div>
+           
+           <footer class="col-xs-12">
+               <div class="row">
+                    <div class="col-md-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6875.905619883301!2d-61.58436826323093!3d15.86786647255768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14a45e0e69e9cf%3A0xd1695adaa99fed1a!2sLes+Saintes+(Terre-de-Haut)!5e1!3m2!1sfr!2sfr!4v1508503724871" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        
+                        <form name="Newsletter"
+                        action="inscriptionNewsletter.php"
+                        method="POST"> 
+ 
+                     
+                       <fieldset> 
+                           <legend>Newsletter</legend> 
+                           <input type="text" name="nom" placeholder="Nom">
+                           <input type="text" name="prenom" placeholder="Prénom">
+                           <input type="email" name="email" placeholder="Email" required>
+                           <input type="submit" value="M'inscrire !">
+ 
+                       </fieldset>
+                       
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <address>
+                            
+                          <!--tel: =directement appeler en cliquant-->
+                        <fieldset>
+        
+                           <legend>Contact</legend>
+                            <strong>Mairie des Saintes</strong><br>
+                           <a href="tel:+59059056045"><i class="fa fa-phone" aria-hidden="true"></i>0590 56 60 45</a><br>
+                           <a href="mailto:contactlesaintes@gouv.fr"><i class="fa fa-envelope" aria-hidden="true"></i>contactlessaintes@gouv.fr</a>
+                           <p>Place Hazier-du-Buisson <br>Terre-de-Haut <br> 97137 </p>
+                        </fieldset>
+        
+                         </address>
+                    </div>
+
+               </div>
+           </footer>
+        </div> <!-- FIN ROW-->      
+    </main>
+    
+   
+    
+    
+    <!-- jQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+   
+       
+        <!--Bootstrap JS -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+   crossorigin="anonymous"></script>
+    
+</body>
+</html>

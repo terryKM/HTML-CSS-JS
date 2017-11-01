@@ -90,7 +90,7 @@ nav{
     float: left;
     padding-left: 130px;
 }
-na ul {
+nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -199,6 +199,7 @@ section article p{
     -webkit-filter: grayscale(0%);
     -webkit-transition:all 0.3s;
     transition:all 0.3s;  
+   
 }
 
 
